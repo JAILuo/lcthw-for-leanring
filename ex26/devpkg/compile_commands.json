@@ -1,0 +1,36 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-Wall",
+      "-I/usr/local/apr/include/apr-1",
+      "-I/usr/local/apr/include/apr-util-1",
+      "-D_LARGEFILE64_SOURCE=1",
+      "-c",
+      "-o",
+      "db.o",
+      "db.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex26/devpkg",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex26/devpkg/db.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex26/devpkg/db.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-Wall",
+      "-I/usr/local/apr/include/apr-1",
+      "-I/usr/local/apr/include/apr-util-1",
+      "-D_LARGEFILE64_SOURCE=1",
+      "-c",
+      "-o",
+      "shell.o",
+      "shell.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex26/devpkg",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex26/devpkg/shell.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex26/devpkg/shell.o"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/DArray.o",
+      "src/lcthw/DArray.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/src/lcthw/DArray.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/src/lcthw/DArray.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/list_algos.o",
+      "src/lcthw/list_algos.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/src/lcthw/list_algos.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/src/lcthw/list_algos.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/list.o",
+      "src/lcthw/list.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/src/lcthw/list.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/src/lcthw/list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-Isrc",
+      "./build/liblcthw.a",
+      "-o",
+      "tests/DArray_tests",
+      "tests/DArray_tests.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/tests/DArray_tests.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/tests/DArray_tests"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-Isrc",
+      "./build/liblcthw.a",
+      "-o",
+      "tests/list_tests",
+      "tests/list_tests.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/tests/list_tests.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex34/liblcthw/tests/list_tests"
+  }
+]
