@@ -11,15 +11,17 @@
  *
  * @param template: The Shell struct containing the template command to run.
  * @param ...: Variable arguments to be substituted into the template command. 
- *             Each key-value pair consists of a key (template argument) and its corresponding value.
+ *             Each key-value pair consists of a key (template argument)
+ *             and its corresponding value.
  *             The variable argument list must be terminated with a NULL value.
- * @return: 0 if the command was executed successfully, -1 if there was an error.
+ * @return: 0 if the command was executed successfully,
+ *         -1 if there was an error.
  * 
  * @Note 
- * The function replaces template arguments with new values provided as variable arguments.
- * The key-value pairs are used to match keys in the template with new arguments.
- * The keys are represented by the template arguments, and the values are the new arguments to substitute.
- * If a key in the template.args array matches the current key, the corresponding value is replaced with the new argument.
+ * The keys are represented by the template arguments,
+ * and the values are the new arguments to substitute.
+ * If a key in the template.args array matches the current key,
+ * the corresponding value is replaced with the new argument.
  * 
  * @Note: The two key-value pair
  *			key <--> args[i] 
@@ -32,7 +34,6 @@ int Shell_exec(Shell template, ...)
     int rc = -1;
     apr_status_t rv = APR_SUCCESS;
     va_list argp;
-	// The argument of the command passed in by the variable parameter function
 	const char *key = NULL;		//The key in a key-value pairs
 	const char *arg = NULL;		//The value in a key-value pairs       
     int i = 0;
@@ -51,11 +52,9 @@ int Shell_exec(Shell template, ...)
         arg = va_arg(argp, const char *);
         
         for(i = 0; template.args[i] != NULL; i++)
-        {
-			// If the same key is found in the array of pointer
-			// in template, then replace.
+		{
             if(strcmp(template.args[i], key) == 0)
-            {
+			{
                 template.args[i] = arg;
 				num_replace_args++;
                 break;
@@ -63,7 +62,7 @@ int Shell_exec(Shell template, ...)
         }
     }
 
-	// Run the command and found parameter
+	// Run the command and found corresponding parameter
     rc = Shell_run(p, &template, num_replace_args);
     check(rc == 0, "the command '%s' was executed unsuccessfully", template.exe); 
 
@@ -73,7 +72,7 @@ int Shell_exec(Shell template, ...)
  
 error:
     if(p)
-    {
+	{
         apr_pool_destroy(p);
     }
     return rc;
@@ -82,9 +81,11 @@ error:
 
 /**
  * Set up and execute a new shell command process.
+ *
  * @param p: The memory pool to use for the process.
  * @param cmd: The Shell struct containing information about the command to run.
- * @Returns: 0 if the command was executed successfully, -1 if there was an error.
+ * @Returns: 0 if the command was executed successfully,
+ *          -1 if there was an error.
  */
 int Shell_run(apr_pool_t *p, Shell *cmd, int num_replace_args)
 {
@@ -119,7 +120,8 @@ error:
     return -1;
 }
 
-Shell CLEANUP_SH = {
+Shell CLEANUP_SH =
+{
     .exe = "rm",
     .dir = "/tmp",
     .args = {"rm", "-rf", "/tmp/pkg-build", "/tmp/pkg-src.tar.gz",
@@ -127,42 +129,48 @@ Shell CLEANUP_SH = {
     .num_args = 4
 };
 
-Shell GIT_SH = {
+Shell GIT_SH =
+{
     .dir = "/tmp",
     .exe = "git",
     .args = {"git", "clone", "URL", "pkg-build", NULL},
     .num_args = 2
 };
 
-Shell TAR_SH = {
+Shell TAR_SH =
+{
     .dir = "/tmp/pkg-build",
     .exe = "tar",
     .args = {"tar", "-xzf", "FILE", "--strip-components", "1", NULL},
     .num_args = 1
 };
 
-Shell CURL_SH = {
+Shell CURL_SH =
+{
     .dir = "/tmp",
     .exe = "curl",
     .args = {"curl", "-L", "-o", "TARGET", "URL", NULL},
     .num_args = 2
 };
 
-Shell CONFIGURE_SH = {
+Shell CONFIGURE_SH =
+{
     .exe = "./configure",
     .dir = "/tmp/pkg-build",
     .args = {"configure", "OPTS", NULL},
     .num_args = 1
 };
 
-Shell MAKE_SH = {
+Shell MAKE_SH =
+{
     .exe = "make",
     .dir = "/tmp/pkg-build",
     .args = {"make", "OPTS", NULL},
     .num_args = 1
 };
 
-Shell INSTALL_SH = {
+Shell INSTALL_SH =
+{
     .exe = "sudo",
     .dir = "/tmp/pkg-build",
     .args = {"sudo", "make", "TARGET", NULL},

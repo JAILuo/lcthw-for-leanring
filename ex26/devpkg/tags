@@ -1,0 +1,325 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/61cc66cfc/
+0	compile_commands.json	/^      "\/usr\/bin\/cc",$/;"	s	array:0.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/cc",$/;"	s	array:1.arguments
+0	compile_commands.json	/^  {$/;"	o
+1	compile_commands.json	/^      "-g",$/;"	s	array:0.arguments
+1	compile_commands.json	/^      "-g",$/;"	s	array:1.arguments
+1	compile_commands.json	/^  {$/;"	o
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:1.arguments
+3	compile_commands.json	/^      "-I\/usr\/local\/apr\/include\/apr-1",$/;"	s	array:0.arguments
+3	compile_commands.json	/^      "-I\/usr\/local\/apr\/include\/apr-1",$/;"	s	array:1.arguments
+4	compile_commands.json	/^      "-I\/usr\/local\/apr\/include\/apr-util-1",$/;"	s	array:0.arguments
+4	compile_commands.json	/^      "-I\/usr\/local\/apr\/include\/apr-util-1",$/;"	s	array:1.arguments
+5	compile_commands.json	/^      "-D_LARGEFILE64_SOURCE=1",$/;"	s	array:0.arguments
+5	compile_commands.json	/^      "-D_LARGEFILE64_SOURCE=1",$/;"	s	array:1.arguments
+6	compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+6	compile_commands.json	/^      "-c",$/;"	s	array:1.arguments
+7	compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+7	compile_commands.json	/^      "-o",$/;"	s	array:1.arguments
+8	compile_commands.json	/^      "db.o",$/;"	s	array:0.arguments
+8	compile_commands.json	/^      "shell.o",$/;"	s	array:1.arguments
+9	compile_commands.json	/^      "db.c"$/;"	s	array:0.arguments
+9	compile_commands.json	/^      "shell.c"$/;"	s	array:1.arguments
+APR	devpkg_notes.md	/^#### APR$/;"	t
+Analysis of commands.c	devpkg_notes.md	/^## Analysis of commands.c$/;"	s
+Analysis of shell.c	devpkg_notes.md	/^## Analysis of shell.c$/;"	s
+BSSSC_BUFF_LEN	bstrlib.c	/^#define BSSSC_BUFF_LEN /;"	d	file:
+BSTRLIB_INCLUDE	bstrlib.h	/^#define BSTRLIB_INCLUDE$/;"	d
+BSTRLIB_NOVSNP	bstrlib.c	/^#  define BSTRLIB_NOVSNP$/;"	d	file:
+BSTRLIB_NOVSNP	bstrlib.h	/^#  define BSTRLIB_NOVSNP$/;"	d
+BSTR_BS_BUFF_LENGTH_GET	bstrlib.h	/^#define BSTR_BS_BUFF_LENGTH_GET /;"	d
+BSTR_ERR	bstrlib.h	/^#define BSTR_ERR /;"	d
+BSTR_OK	bstrlib.h	/^#define BSTR_OK /;"	d
+BSTR_VER_MAJOR	bstrlib.h	/^#define BSTR_VER_MAJOR /;"	d
+BSTR_VER_MINOR	bstrlib.h	/^#define BSTR_VER_MINOR /;"	d
+BSTR_VER_UPDATE	bstrlib.h	/^#define BSTR_VER_UPDATE /;"	d
+BS_BUFF_SZ	bstrlib.c	/^#define BS_BUFF_SZ /;"	d	file:
+BUILD_DIR	commands.h	/^#define BUILD_DIR /;"	d
+Brief description	devpkg_notes.md	/^## Brief description$/;"	s
+CFCLEN	bstrlib.c	/^#define CFCLEN /;"	d	file:
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -I${PREFIX}\/apr\/include\/apr-1 -I${PREFIX}\/apr\/include\/apr-util-1 -D_LARG/;"	m
+CLEANUP_SH	shell.c	/^Shell CLEANUP_SH =$/;"	v	typeref:typename:Shell
+COMMAND_BUILD	commands.h	/^	COMMAND_BUILD$/;"	e	enum:CommandType
+COMMAND_FETCH	commands.h	/^	COMMAND_FETCH,$/;"	e	enum:CommandType
+COMMAND_INIT	commands.h	/^	COMMAND_INIT,$/;"	e	enum:CommandType
+COMMAND_INSTALL	commands.h	/^	COMMAND_INSTALL,$/;"	e	enum:CommandType
+COMMAND_LIST	commands.h	/^	COMMAND_LIST,$/;"	e	enum:CommandType
+COMMAND_NONE	commands.h	/^	COMMAND_NONE,$/;"	e	enum:CommandType
+CONFIGURE_SH	shell.c	/^Shell CONFIGURE_SH =$/;"	v	typeref:typename:Shell
+CONFIG_SCRIPT	commands.h	/^#define CONFIG_SCRIPT /;"	d
+CURL_SH	shell.c	/^Shell CURL_SH =$/;"	v	typeref:typename:Shell
+CommandType	commands.h	/^enum CommandType {$/;"	g
+Command_build	commands.c	/^int Command_build(apr_pool_t *p, const char *url, const char *configure_opts,$/;"	f	typeref:typename:int
+Command_depends	commands.c	/^int Command_depends(apr_pool_t *p, const char *path)$/;"	f	typeref:typename:int
+Command_fetch	commands.c	/^int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)$/;"	f	typeref:typename:int
+Command_install	commands.c	/^int Command_install(apr_pool_t *p, const char *url, const char *configure_opts,$/;"	f	typeref:typename:int
+DB_DIR	db.h	/^#define DB_DIR /;"	d
+DB_FILE	db.h	/^#define DB_FILE /;"	d
+DB_close	db.c	/^static void DB_close(FILE *db)$/;"	f	typeref:typename:void	file:
+DB_find	db.c	/^int DB_find(const char *url)$/;"	f	typeref:typename:int
+DB_init	db.c	/^int DB_init()$/;"	f	typeref:typename:int
+DB_list	db.c	/^int DB_list()$/;"	f	typeref:typename:int
+DB_load	db.c	/^static bstring DB_load()$/;"	f	typeref:typename:bstring	file:
+DB_open	db.c	/^static FILE *DB_open(const char *path, const char *mode)$/;"	f	typeref:typename:FILE *	file:
+DB_update	db.c	/^int DB_update(const char *url)$/;"	f	typeref:typename:int
+DEPENDS_PATH	commands.h	/^#define	DEPENDS_PATH /;"	d
+DEPEND_PAT	commands.h	/^#define DEPEND_PAT /;"	d
+Example	README.md	/^## Example$/;"	s
+Features and Usage of APR:	devpkg_notes.md	/^####  Features and Usage of APR:$/;"	t
+Functions in APR library	devpkg_notes.md	/^## Functions in APR library$/;"	s
+Functions（example: Installing a Package）	devpkg_notes.md	/^#### Functions（example: Installing a Package）$/;"	t
+GIT_PAT	commands.h	/^#define GIT_PAT /;"	d
+GIT_SH	shell.c	/^Shell GIT_SH =$/;"	v	typeref:typename:Shell
+INITIAL_STATIC_FIND_INDEX_COUNT	bstrlib.c	/^#define INITIAL_STATIC_FIND_INDEX_COUNT /;"	d	file:
+INSTALL_SH	shell.c	/^Shell INSTALL_SH =$/;"	v	typeref:typename:Shell
+Introduce	devpkg_notes.md	/^#### Introduce $/;"	t
+LDFLAGS	Makefile	/^LDFLAGS = -L${PREFIX}\/apr\/lib -lapr-1 -pthread -laprutil-1$/;"	m
+LONG_BITS_QTY	bstrlib.c	/^#define LONG_BITS_QTY /;"	d	file:
+LONG_LOG_BITS_QTY	bstrlib.c	/^#define LONG_LOG_BITS_QTY /;"	d	file:
+LONG_TYPE	bstrlib.c	/^#define LONG_TYPE /;"	d	file:
+MAKE_SH	shell.c	/^Shell MAKE_SH =$/;"	v	typeref:typename:Shell
+MAX_COMMAND_ARGS	shell.h	/^#define MAX_COMMAND_ARGS /;"	d
+Options	README.md	/^## Options$/;"	s
+PREFIX	Makefile	/^PREFIX ?= \/usr\/local$/;"	m
+START_VSNBUFF	bstrlib.c	/^#define START_VSNBUFF /;"	d	file:
+Shell	shell.h	/^typedef struct Shell$/;"	s
+Shell	shell.h	/^} Shell;$/;"	t	typeref:struct:Shell
+Shell_exec	shell.c	/^int Shell_exec(Shell template, ...)$/;"	f	typeref:typename:int
+Shell_run	shell.c	/^int Shell_run(apr_pool_t *p, Shell *cmd, int num_replace_args)$/;"	f	typeref:typename:int
+Some header files in devpkg	devpkg_notes.md	/^## Some header files in devpkg$/;"	s
+Summary:	devpkg_notes.md	/^#### Summary:$/;"	t
+TAR_BZ2_PAT	commands.h	/^#define TAR_BZ2_PAT /;"	d
+TAR_BZ2_SRC	commands.h	/^#define TAR_BZ2_SRC /;"	d
+TAR_GZ_PAT	commands.h	/^#define TAR_GZ_PAT /;"	d
+TAR_GZ_SRC	commands.h	/^#define TAR_GZ_SRC /;"	d
+TAR_SH	shell.c	/^Shell TAR_SH =$/;"	v	typeref:typename:Shell
+The order of using	devpkg_notes.md	/^#### The order of using$/;"	t
+The use of bstrlib	devpkg_notes.md	/^## The use of bstrlib$/;"	s
+The use of variant function	devpkg_notes.md	/^## The use of variant function $/;"	s
+_CRT_SECURE_NO_WARNINGS	bstrlib.c	/^# define _CRT_SECURE_NO_WARNINGS$/;"	d	file:
+__db_h	db.h	/^#define __db_h$/;"	d
+__dbg_h__	dbg.h	/^#define __dbg_h__$/;"	d
+_commands_h	commands.h	/^#define _commands_h$/;"	d
+_shell_h	shell.h	/^#define _shell_h$/;"	d
+all	Makefile	/^all: devpkg$/;"	t
+args	shell.h	/^    const char *args[MAX_COMMAND_ARGS];\/\/ The arguments for the commmand$/;"	m	struct:Shell	typeref:typename:const char * []
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:0
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:1
+attr	shell.h	/^    apr_procattr_t *attr;	\/\/ The attribute of the process$/;"	m	struct:Shell	typeref:typename:apr_procattr_t *
+b	bstrlib.c	/^	bstring b;$/;"	m	struct:genBstrList	typeref:typename:bstring	file:
+bBlockCopy	bstrlib.c	/^#define bBlockCopy(/;"	d	file:
+bNgetc	bstrlib.h	/^typedef int (*bNgetc) (void *parm);$/;"	t	typeref:typename:int (*)(void * parm)
+bNread	bstrlib.h	/^typedef size_t (* bNread) (void *buff, size_t elsize, size_t nelem, void *parm);$/;"	t	typeref:typename:size_t (*)(void * buff,size_t elsize,size_t nelem,void * parm)
+bStream	bstrlib.c	/^struct bStream {$/;"	s	file:
+balloc	bstrlib.c	/^int balloc (bstring b, int olen) {$/;"	f	typeref:typename:int
+ballocmin	bstrlib.c	/^int ballocmin (bstring b, int len) {$/;"	f	typeref:typename:int
+bassign	bstrlib.c	/^int bassign (bstring a, const_bstring b) {$/;"	f	typeref:typename:int
+bassignStatic	bstrlib.h	/^#define bassignStatic(/;"	d
+bassignblk	bstrlib.c	/^int bassignblk (bstring a, const void * s, int len) {$/;"	f	typeref:typename:int
+bassigncstr	bstrlib.c	/^int bassigncstr (bstring a, const char * str) {$/;"	f	typeref:typename:int
+bassignformat	bstrlib.c	/^int bassignformat (bstring b, const char * fmt, ...) {$/;"	f	typeref:typename:int
+bassigngets	bstrlib.c	/^int bassigngets (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:int
+bassignmidstr	bstrlib.c	/^int bassignmidstr (bstring a, const_bstring b, int left, int len) {$/;"	f	typeref:typename:int
+bcatStatic	bstrlib.h	/^#define bcatStatic(/;"	d
+bcatblk	bstrlib.c	/^int bcatblk (bstring b, const void * s, int len) {$/;"	f	typeref:typename:int
+bcatcstr	bstrlib.c	/^int bcatcstr (bstring b, const char * s) {$/;"	f	typeref:typename:int
+bchar	bstrlib.h	/^#define bchar(/;"	d
+bchare	bstrlib.h	/^#define bchare(/;"	d
+bconcat	bstrlib.c	/^int bconcat (bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+bconchar	bstrlib.c	/^int bconchar (bstring b, char c) {$/;"	f	typeref:typename:int
+bcstrfree	bstrlib.c	/^int bcstrfree (char * s) {$/;"	f	typeref:typename:int
+bdata	bstrlib.h	/^#define bdata(/;"	d
+bdatae	bstrlib.h	/^#define bdatae(/;"	d
+bdataofs	bstrlib.h	/^#define bdataofs(/;"	d
+bdataofse	bstrlib.h	/^#define bdataofse(/;"	d
+bdelete	bstrlib.c	/^int bdelete (bstring b, int pos, int len) {$/;"	f	typeref:typename:int
+bdestroy	bstrlib.c	/^int bdestroy (bstring b) {$/;"	f	typeref:typename:int
+bfindreplace	bstrlib.c	/^int bfindreplace (bstring b, const_bstring find, const_bstring repl,$/;"	f	typeref:typename:int
+bfindreplacecaseless	bstrlib.c	/^int bfindreplacecaseless (bstring b, const_bstring find, const_bstring repl,$/;"	f	typeref:typename:int
+bformat	bstrlib.c	/^bstring bformat (const char * fmt, ...) {$/;"	f	typeref:typename:bstring
+bformata	bstrlib.c	/^int bformata (bstring b, const char * fmt, ...) {$/;"	f	typeref:typename:int
+bfromStatic	bstrlib.h	/^#define bfromStatic(/;"	d
+bfromcstr	bstrlib.c	/^bstring bfromcstr (const char * str) {$/;"	f	typeref:typename:bstring
+bfromcstralloc	bstrlib.c	/^bstring bfromcstralloc (int mlen, const char * str) {$/;"	f	typeref:typename:bstring
+bfromcstrrangealloc	bstrlib.c	/^bstring bfromcstrrangealloc (int minl, int maxl, const char* str) {$/;"	f	typeref:typename:bstring
+bgets	bstrlib.c	/^bstring bgets (bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:bstring
+bgetsa	bstrlib.c	/^int bgetsa (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:int
+binchr	bstrlib.c	/^int binchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+binchrCF	bstrlib.c	/^static int binchrCF (const unsigned char * data, int len, int pos,$/;"	f	typeref:typename:int	file:
+binchrr	bstrlib.c	/^int binchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+binchrrCF	bstrlib.c	/^static int binchrrCF (const unsigned char * data, int pos,$/;"	f	typeref:typename:int	file:
+binsert	bstrlib.c	/^int binsert (bstring b1, int pos, const_bstring b2, unsigned char fill) {$/;"	f	typeref:typename:int
+binsertStatic	bstrlib.h	/^#define binsertStatic(/;"	d
+binsertblk	bstrlib.c	/^int binsertblk (bstring b, int pos, const void * blk, int len,$/;"	f	typeref:typename:int
+binsertch	bstrlib.c	/^int binsertch (bstring b, int pos, int len, unsigned char fill) {$/;"	f	typeref:typename:int
+binstr	bstrlib.c	/^int binstr (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+binstrcaseless	bstrlib.c	/^int binstrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+binstrr	bstrlib.c	/^int binstrr (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+binstrrcaseless	bstrlib.c	/^int binstrrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+biseq	bstrlib.c	/^int biseq (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+biseqStatic	bstrlib.h	/^#define biseqStatic(/;"	d
+biseqblk	bstrlib.c	/^int biseqblk (const_bstring b, const void * blk, int len) {$/;"	f	typeref:typename:int
+biseqcaseless	bstrlib.c	/^int biseqcaseless (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+biseqcaselessStatic	bstrlib.h	/^#define biseqcaselessStatic(/;"	d
+biseqcaselessblk	bstrlib.c	/^int biseqcaselessblk (const_bstring b, const void * blk, int len) {$/;"	f	typeref:typename:int
+biseqcstr	bstrlib.c	/^int biseqcstr (const_bstring b, const char * s) {$/;"	f	typeref:typename:int
+biseqcstrcaseless	bstrlib.c	/^int biseqcstrcaseless (const_bstring b, const char * s) {$/;"	f	typeref:typename:int
+bisstemeqStatic	bstrlib.h	/^#define bisstemeqStatic(/;"	d
+bisstemeqblk	bstrlib.c	/^int bisstemeqblk (const_bstring b0, const void * blk, int len) {$/;"	f	typeref:typename:int
+bisstemeqcaselessStatic	bstrlib.h	/^#define bisstemeqcaselessStatic(/;"	d
+bisstemeqcaselessblk	bstrlib.c	/^int bisstemeqcaselessblk (const_bstring b0, const void * blk, int len) {$/;"	f	typeref:typename:int
+biswriteprotected	bstrlib.h	/^#define biswriteprotected(/;"	d
+bjoin	bstrlib.c	/^bstring bjoin (const struct bstrList * bl, const_bstring sep) {$/;"	f	typeref:typename:bstring
+bjoinStatic	bstrlib.h	/^#define bjoinStatic(/;"	d
+bjoinblk	bstrlib.c	/^bstring bjoinblk (const struct bstrList * bl, const void * blk, int len) {$/;"	f	typeref:typename:bstring
+bl	bstrlib.c	/^	struct bstrList * bl;$/;"	m	struct:genBstrList	typeref:struct:bstrList *	file:
+blength	bstrlib.h	/^#define blength(/;"	d
+blengthe	bstrlib.h	/^#define blengthe(/;"	d
+blk2bstr	bstrlib.c	/^bstring blk2bstr (const void * blk, int len) {$/;"	f	typeref:typename:bstring
+blk2tbstr	bstrlib.h	/^#define blk2tbstr(/;"	d
+bltrimws	bstrlib.c	/^int bltrimws (bstring b) {$/;"	f	typeref:typename:int
+bmid2tbstr	bstrlib.h	/^#define bmid2tbstr(/;"	d
+bmidstr	bstrlib.c	/^bstring bmidstr (const_bstring b, int left, int len) {$/;"	f	typeref:typename:bstring
+bninchr	bstrlib.c	/^int bninchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+bninchrr	bstrlib.c	/^int bninchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+bpattern	bstrlib.c	/^int bpattern (bstring b, int len) {$/;"	f	typeref:typename:int
+bread	bstrlib.c	/^bstring bread (bNread readPtr, void * parm) {$/;"	f	typeref:typename:bstring
+breada	bstrlib.c	/^int breada (bstring b, bNread readPtr, void * parm) {$/;"	f	typeref:typename:int
+breplace	bstrlib.c	/^int breplace (bstring b1, int pos, int len, const_bstring b2,$/;"	f	typeref:typename:int
+brtrimws	bstrlib.c	/^int brtrimws (bstring b) {$/;"	f	typeref:typename:int
+bsStatic	bstrlib.h	/^# define bsStatic(/;"	d
+bsStaticBlkParms	bstrlib.h	/^#define bsStaticBlkParms(/;"	d
+bsStaticMlen	bstrlib.h	/^#define bsStaticMlen(/;"	d
+bsbufflength	bstrlib.c	/^int bsbufflength (struct bStream * s, int sz) {$/;"	f	typeref:typename:int
+bscb	bstrlib.c	/^static int bscb (void * parm, int ofs, int len) {$/;"	f	typeref:typename:int	file:
+bsclose	bstrlib.c	/^void * bsclose (struct bStream * s) {$/;"	f	typeref:typename:void *
+bseof	bstrlib.c	/^int bseof (const struct bStream * s) {$/;"	f	typeref:typename:int
+bsetstr	bstrlib.c	/^int bsetstr (bstring b0, int pos, const_bstring b1, unsigned char fill) {$/;"	f	typeref:typename:int
+bsopen	bstrlib.c	/^struct bStream * bsopen (bNread readPtr, void * parm) {$/;"	f	typeref:struct:bStream *
+bspeek	bstrlib.c	/^int bspeek (bstring r, const struct bStream * s) {$/;"	f	typeref:typename:int
+bsplit	bstrlib.c	/^struct bstrList * bsplit (const_bstring str, unsigned char splitChar) {$/;"	f	typeref:struct:bstrList *
+bsplitcb	bstrlib.c	/^int bsplitcb (const_bstring str, unsigned char splitChar, int pos,$/;"	f	typeref:typename:int
+bsplits	bstrlib.c	/^struct bstrList * bsplits (const_bstring str, const_bstring splitStr) {$/;"	f	typeref:struct:bstrList *
+bsplitscb	bstrlib.c	/^int bsplitscb (const_bstring str, const_bstring splitStr, int pos,$/;"	f	typeref:typename:int
+bsplitstr	bstrlib.c	/^struct bstrList * bsplitstr (const_bstring str, const_bstring splitStr) {$/;"	f	typeref:struct:bstrList *
+bsplitstrcb	bstrlib.c	/^int bsplitstrcb (const_bstring str, const_bstring splitStr, int pos,$/;"	f	typeref:typename:int
+bsread	bstrlib.c	/^int bsread (bstring r, struct bStream * s, int n) {$/;"	f	typeref:typename:int
+bsreada	bstrlib.c	/^int bsreada (bstring r, struct bStream * s, int n) {$/;"	f	typeref:typename:int
+bsreadln	bstrlib.c	/^int bsreadln (bstring r, struct bStream * s, char terminator) {$/;"	f	typeref:typename:int
+bsreadlna	bstrlib.c	/^int bsreadlna (bstring r, struct bStream * s, char terminator) {$/;"	f	typeref:typename:int
+bsreadlns	bstrlib.c	/^int bsreadlns (bstring r, struct bStream * s, const_bstring term) {$/;"	f	typeref:typename:int
+bsreadlnsa	bstrlib.c	/^int bsreadlnsa (bstring r, struct bStream * s, const_bstring term) {$/;"	f	typeref:typename:int
+bssplitscb	bstrlib.c	/^int bssplitscb (struct bStream * s, const_bstring splitStr,$/;"	f	typeref:typename:int
+bssplitstrcb	bstrlib.c	/^int bssplitstrcb (struct bStream * s, const_bstring splitStr,$/;"	f	typeref:typename:int
+bstr2cstr	bstrlib.c	/^char * bstr2cstr (const_bstring b, char z) {$/;"	f	typeref:typename:char *
+bstrList	bstrlib.h	/^struct bstrList {$/;"	s
+bstrListAlloc	bstrlib.c	/^int bstrListAlloc (struct bstrList * sl, int msz) {$/;"	f	typeref:typename:int
+bstrListAllocMin	bstrlib.c	/^int bstrListAllocMin (struct bstrList * sl, int msz) {$/;"	f	typeref:typename:int
+bstrListCreate	bstrlib.c	/^struct bstrList * bstrListCreate (void) {$/;"	f	typeref:struct:bstrList *
+bstrListDestroy	bstrlib.c	/^int bstrListDestroy (struct bstrList * sl) {$/;"	f	typeref:typename:int
+bstr__alloc	bstrlib.c	/^#define bstr__alloc(/;"	d	file:
+bstr__alloc	bstrlib.c	/^void* bstr__alloc (size_t sz) {$/;"	f	typeref:typename:void *
+bstr__free	bstrlib.c	/^#define bstr__free(/;"	d	file:
+bstr__memchr	bstrlib.c	/^#define bstr__memchr(/;"	d	file:
+bstr__memcmp	bstrlib.c	/^#define bstr__memcmp(/;"	d	file:
+bstr__memcpy	bstrlib.c	/^#define bstr__memcpy(/;"	d	file:
+bstr__memmove	bstrlib.c	/^#define bstr__memmove(/;"	d	file:
+bstr__memset	bstrlib.c	/^#define bstr__memset(/;"	d	file:
+bstr__realloc	bstrlib.c	/^#define bstr__realloc(/;"	d	file:
+bstrchr	bstrlib.h	/^#define bstrchr(/;"	d
+bstrchrp	bstrlib.c	/^int bstrchrp (const_bstring b, int c, int pos) {$/;"	f	typeref:typename:int
+bstrcmp	bstrlib.c	/^int bstrcmp (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+bstrcpy	bstrlib.c	/^bstring bstrcpy (const_bstring b) {$/;"	f	typeref:typename:bstring
+bstricmp	bstrlib.c	/^int bstricmp (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+bstring	bstrlib.h	/^typedef struct tagbstring * bstring;$/;"	t	typeref:struct:tagbstring *
+bstrlib	devpkg_notes.md	/^#### bstrlib$/;"	t
+bstrlib.o	Makefile	/^bstrlib.o: bstrlib.c bstrlib.h$/;"	t
+bstrncmp	bstrlib.c	/^int bstrncmp (const_bstring b0, const_bstring b1, int n) {$/;"	f	typeref:typename:int
+bstrnicmp	bstrlib.c	/^int bstrnicmp (const_bstring b0, const_bstring b1, int n) {$/;"	f	typeref:typename:int
+bstrrchr	bstrlib.h	/^#define bstrrchr(/;"	d
+bstrrchrp	bstrlib.c	/^int bstrrchrp (const_bstring b, int c, int pos) {$/;"	f	typeref:typename:int
+bsunread	bstrlib.c	/^int bsunread (struct bStream * s, const_bstring b) {$/;"	f	typeref:typename:int
+btfromblk	bstrlib.h	/^#define btfromblk(/;"	d
+btfromblkltrimws	bstrlib.h	/^#define btfromblkltrimws(/;"	d
+btfromblkrtrimws	bstrlib.h	/^#define btfromblkrtrimws(/;"	d
+btfromblktrimws	bstrlib.h	/^#define btfromblktrimws(/;"	d
+btfromcstr	bstrlib.h	/^#define btfromcstr(/;"	d
+btolower	bstrlib.c	/^int btolower (bstring b) {$/;"	f	typeref:typename:int
+btoupper	bstrlib.c	/^int btoupper (bstring b) {$/;"	f	typeref:typename:int
+btrimws	bstrlib.c	/^int btrimws (bstring b) {$/;"	f	typeref:typename:int
+btrunc	bstrlib.c	/^int btrunc (bstring b, int n) {$/;"	f	typeref:typename:int
+buff	bstrlib.c	/^	bstring buff;		\/* Buffer for over-reads *\/$/;"	m	struct:bStream	typeref:typename:bstring	file:
+buildCharField	bstrlib.c	/^static int buildCharField (struct charField * cf, const_bstring b) {$/;"	f	typeref:typename:int	file:
+bvcformata	bstrlib.c	/^int bvcformata (bstring b, int count, const char * fmt, va_list arg) {$/;"	f	typeref:typename:int
+bvformata	bstrlib.h	/^#define bvformata(/;"	d
+bwriteallow	bstrlib.h	/^#define bwriteallow(/;"	d
+bwriteprotect	bstrlib.h	/^#define bwriteprotect(/;"	d
+charField	bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	s	file:
+charField	bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	s	file:
+check	dbg.h	/^#define check(/;"	d
+check_debug	dbg.h	/^#define check_debug(/;"	d
+check_mem	dbg.h	/^#define check_mem(/;"	d
+clean	Makefile	/^clean:$/;"	t
+clean_errno	dbg.h	/^#define clean_errno(/;"	d
+commands.c	devpkg_notes.md	/^#### commands.c$/;"	t
+commands.o	Makefile	/^commands.o: commands.c commands.h$/;"	t
+const_bstring	bstrlib.h	/^typedef const struct tagbstring * const_bstring;$/;"	t	typeref:typename:const struct tagbstring *
+content	bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	m	struct:charField	typeref:typename:LONG_TYPE[]	file:
+content	bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	m	struct:charField	typeref:typename:unsigned char[]	file:
+cstr2bstr	bstrlib.h	/^#define cstr2bstr /;"	d
+cstr2tbstr	bstrlib.h	/^#define cstr2tbstr /;"	d
+data	bstrlib.h	/^	unsigned char * data;$/;"	m	struct:tagbstring	typeref:typename:unsigned char *
+db.c	devpkg_notes.md	/^####  db.c$/;"	t
+db.o	Makefile	/^db.o: db.c db.h$/;"	t
+debug	dbg.h	/^#define debug(/;"	d
+devpkg	Makefile	/^devpkg: bstrlib.o db.o shell.o commands.o main.o$/;"	t
+dir	shell.h	/^    const char *dir;		\/\/ The directory in which the command will be executed$/;"	m	struct:Shell	typeref:typename:const char *
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex26\/devpkg",$/;"	s	object:0
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex26\/devpkg",$/;"	s	object:1
+downcase	bstrlib.c	/^#define downcase(/;"	d	file:
+entry	bstrlib.h	/^    bstring * entry;$/;"	m	struct:bstrList	typeref:typename:bstring *
+exe	shell.h	/^    const char *exe;		\/\/ The executable command$/;"	m	struct:Shell	typeref:typename:const char *
+exit_code	shell.h	/^    int exit_code;			\/\/ The exit code of the process$/;"	m	struct:Shell	typeref:typename:int
+exit_why	shell.h	/^    apr_exit_why_e exit_why;\/\/ The reason for process exit$/;"	m	struct:Shell	typeref:typename:apr_exit_why_e
+exvsnprintf	bstrlib.c	/^#define exvsnprintf(/;"	d	file:
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex26\/devpkg\/db.c",$/;"	s	object:0
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex26\/devpkg\/shell.c",$/;"	s	object:1
+findreplaceengine	bstrlib.c	/^static int findreplaceengine (bstring b, const_bstring find,$/;"	f	typeref:typename:int	file:
+genBstrList	bstrlib.c	/^struct genBstrList {$/;"	s	file:
+install	Makefile	/^install: devpkg$/;"	t
+instr_fnptr	bstrlib.c	/^typedef int (*instr_fnptr) (const_bstring s1, int pos, const_bstring s2);$/;"	t	typeref:typename:int (*)(const_bstring s1,int pos,const_bstring s2)	file:
+invertCharField	bstrlib.c	/^static void invertCharField (struct charField * cf) {$/;"	f	typeref:typename:void	file:
+isEOF	bstrlib.c	/^	int isEOF;			\/* track file's EOF state *\/$/;"	m	struct:bStream	typeref:typename:int	file:
+log_err	dbg.h	/^#define log_err(/;"	d
+log_info	dbg.h	/^#define log_info(/;"	d
+log_warn	dbg.h	/^#define log_warn(/;"	d
+main	main.c	/^int main(int argc, const char *argv[])$/;"	f	typeref:typename:int
+main.o	Makefile	/^main.o: main.c$/;"	t
+maxBuffSz	bstrlib.c	/^	int maxBuffSz;$/;"	m	struct:bStream	typeref:typename:int	file:
+mlen	bstrlib.h	/^	int mlen;$/;"	m	struct:tagbstring	typeref:typename:int
+mlen	bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList	typeref:typename:int
+num_args	shell.h	/^	int num_args;			\/\/ The count of arguments that need to replace.$/;"	m	struct:Shell	typeref:typename:int
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex26\/devpkg\/db.o"$/;"	s	object:0
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex26\/devpkg\/shell.o"$/;"	s	object:1
+parm	bstrlib.c	/^	void * parm;		\/* The stream handle for core stream *\/$/;"	m	struct:bStream	typeref:typename:void *	file:
+proc	shell.h	/^    apr_proc_t proc;		\/\/ The process information $/;"	m	struct:Shell	typeref:typename:apr_proc_t
+qty	bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList	typeref:typename:int
+readFnPtr	bstrlib.c	/^	bNread readFnPtr;	\/* fread compatible fnptr for core stream *\/$/;"	m	struct:bStream	typeref:typename:bNread	file:
+sentinel	dbg.h	/^#define sentinel(/;"	d
+setInCharField	bstrlib.c	/^#define setInCharField(/;"	d	file:
+shell.c	devpkg_notes.md	/^#### shell.c$/;"	t
+shell.o	Makefile	/^shell.o: shell.c shell.h$/;"	t
+slen	bstrlib.h	/^	int slen;$/;"	m	struct:tagbstring	typeref:typename:int
+snapUpSize	bstrlib.c	/^static int snapUpSize (int i) {$/;"	f	typeref:typename:int	file:
+tagbstring	bstrlib.h	/^struct tagbstring {$/;"	s
+testInCharField	bstrlib.c	/^#define testInCharField(/;"	d	file:
+upcase	bstrlib.c	/^#define   upcase(/;"	d	file:
+variant function	devpkg_notes.md	/^#### variant function$/;"	t
+wspace	bstrlib.c	/^#define   wspace(/;"	d	file:

@@ -2,9 +2,9 @@
 #include <apr_fnmatch.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <apr_errno.h>
+#include <apr_file_info.h>
 
-#include "apr_errno.h"
-#include "apr_file_info.h"
 #include "commands.h"
 #include "shell.h"
 #include "dbg.h"
@@ -30,7 +30,7 @@ int Command_depends(apr_pool_t *p, const char *path)
 	for(line = bgets((bNgetc)fgetc, in, '\n');
 		line != NULL;
 		line = bgets((bNgetc)fgetc, in, '\n'))
-		{
+	{
 			btrimws(line);
 			log_info("Processing depends: %s.", bdata(line));
 			int rc = Command_install(p, bdata(line), NULL, NULL, NULL);
@@ -60,7 +60,8 @@ error:
  * @param p Pointer to the memory pool.
  * @param url The URL from which to fetch the source code or dependencies.
  * @param fetch_only Flag indicating whether only fetching is required.
- * @return Returns 1 if an install needs to run, 0 if no install needed, -1 on error.
+ * @return 1 if an install needs to run, 0 if no install needed,
+ *        -1 on error.
  */
 int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)
 {
@@ -71,11 +72,12 @@ int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)
 
 	check(rv == APR_SUCCESS, "Failed to parse URL: %s", url);
 
-	if(apr_fnmatch(GIT_PAT, info.path, 0) == APR_SUCCESS)
+	if(apr_fnmatch(GIT_PAT, info.path, 0) == APR_SUCCESS) 
 	{
 		rc = Shell_exec(GIT_SH, "URL", url, NULL);
 		check(rc == 0, "git failed.");
-	}else if(apr_fnmatch(DEPEND_PAT, info.path, 0) == APR_SUCCESS)
+
+	} else if(apr_fnmatch(DEPEND_PAT, info.path, 0) == APR_SUCCESS)
 	{
 		check(!fetch_only, "No point in fetching a DEPENDS file.");
 		
@@ -84,7 +86,7 @@ int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)
 			depends_file = DEPENDS_PATH;
 			rc = Shell_exec(CURL_SH, "URL", url, "TARGET", depends_file, NULL);
 			check(rc == 0, "curl failed.");
-		}else 
+		}else
 		{
 			depends_file = info.path;
 		}
@@ -97,9 +99,9 @@ int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)
 		// this indicates nothing needs to be done.
 		return 0;
 
-	}else if(apr_fnmatch(TAR_GZ_PAT, info.path, 0) == APR_SUCCESS)
+	} else if(apr_fnmatch(TAR_GZ_PAT, info.path, 0) == APR_SUCCESS)
 	{
-		if(info.scheme)
+		if(info.scheme) 
 		{
 			rc = Shell_exec(CURL_SH,
 					"URL", url,
@@ -112,8 +114,10 @@ int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)
 		check(rv = APR_SUCCESS,	"failed to make directory %s.", BUILD_DIR);
 		rc = Shell_exec(TAR_SH, "FILE", TAR_BZ2_SRC, NULL);
 		check(rc == 0, "Failed to untar: %s", TAR_BZ2_SRC);
-	}else {
-	sentinel("Don't know how to handle %s", url);
+
+	} else 
+	{
+		sentinel("Don't know how to handle %s", url);
 	}
 
 	// indicates that an install needs to actually run
@@ -202,11 +206,11 @@ int Command_install(apr_pool_t *p, const char *url, const char *configure_opts,
 	{
 		rc = Command_build(p, url, configure_opts, make_opts, install_opts);
 		check(rc == 0, "Failed to build : %s", url);
-	}else if(rc == 0)
+	} else if(rc == 0)
 	{
 		// no install needed
 		log_info("Depends successfully installed: %s", url);
-	}else 
+	} else 
 	{
 		// had an error
 		sentinel("Install failed: %s", url);

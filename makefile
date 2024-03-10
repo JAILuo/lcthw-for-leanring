@@ -1,5 +1,6 @@
 CFLAGS=-Wall -g
 
+# for test
 
 clean:
 	rm -f ex1 ex4 ex8 ex9 ex10 ex14 ex15 ex16 ex16v2 ex17 ex17v2 ex18

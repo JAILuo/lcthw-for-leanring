@@ -1,0 +1,38 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/list.o",
+      "src/lcthw/list.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex32/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex32/liblcthw/src/lcthw/list.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex32/liblcthw/src/lcthw/list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "build/liblcthw.a",
+      "-o",
+      "tests/list_tests",
+      "tests/list_tests.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex32/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex32/liblcthw/tests/list_tests.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex32/liblcthw/tests/list_tests"
+  }
+]

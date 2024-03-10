@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/61cc66cfc/
+RUN_TESTS	minunit.h	/^#define RUN_TESTS(/;"	d	signature:(name)
+_minunit_h	minunit.h	/^#define _minunit_h$/;"	d
+all_tests	DArray_tests.c	/^char *all_tests()$/;"	f	typeref:typename:char *	signature:()
+all_tests	list_tests.c	/^char *all_tests() $/;"	f	typeref:typename:char *	signature:()
+array	DArray_tests.c	/^static DArray *array = NULL;$/;"	v	typeref:typename:DArray *	file:
+list	list_tests.c	/^static List *list = NULL;$/;"	v	typeref:typename:List *	file:
+mu_assert	minunit.h	/^#define mu_assert(/;"	d	signature:(test,message)
+mu_run_test	minunit.h	/^#define mu_run_test(/;"	d	signature:(test)
+mu_suite_start	minunit.h	/^#define mu_suite_start(/;"	d	signature:()
+test1	list_tests.c	/^char *test1 = "test1 data";$/;"	v	typeref:typename:char *
+test2	list_tests.c	/^char *test2 = "test2 data";$/;"	v	typeref:typename:char *
+test3	list_tests.c	/^char *test3 = "test3 data";$/;"	v	typeref:typename:char *
+test_create	DArray_tests.c	/^char *test_create()$/;"	f	typeref:typename:char *	signature:()
+test_create	list_tests.c	/^char *test_create()$/;"	f	typeref:typename:char *	signature:()
+test_destroy	DArray_tests.c	/^char *test_destroy()$/;"	f	typeref:typename:char *	signature:()
+test_destroy	list_tests.c	/^char *test_destroy()$/;"	f	typeref:typename:char *	signature:()
+test_expand_contract	DArray_tests.c	/^char *test_expand_contract()$/;"	f	typeref:typename:char *	signature:()
+test_get	DArray_tests.c	/^char *test_get()$/;"	f	typeref:typename:char *	signature:()
+test_new	DArray_tests.c	/^char *test_new()$/;"	f	typeref:typename:char *	signature:()
+test_push_pop	DArray_tests.c	/^char *test_push_pop()$/;"	f	typeref:typename:char *	signature:()
+test_push_pop	list_tests.c	/^char *test_push_pop()$/;"	f	typeref:typename:char *	signature:()
+test_remove	DArray_tests.c	/^char *test_remove()$/;"	f	typeref:typename:char *	signature:()
+test_remove	list_tests.c	/^char *test_remove()$/;"	f	typeref:typename:char *	signature:()
+test_set	DArray_tests.c	/^char *test_set()$/;"	f	typeref:typename:char *	signature:()
+test_shift	list_tests.c	/^char *test_shift()$/;"	f	typeref:typename:char *	signature:()
+test_unshift	list_tests.c	/^char *test_unshift()$/;"	f	typeref:typename:char *	signature:()
+tests_run	minunit.h	/^int tests_run;$/;"	v	typeref:typename:int
+val1	DArray_tests.c	/^static int *val1 = NULL;$/;"	v	typeref:typename:int *	file:
+val2	DArray_tests.c	/^static int *val2 = NULL;$/;"	v	typeref:typename:int *	file:

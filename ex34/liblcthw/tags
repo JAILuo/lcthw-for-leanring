@@ -1,0 +1,219 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/61cc66cfc/
+$(SO_TARGET)	Makefile	/^$(SO_TARGET): $(TARGET) $(OBJECTS)$/;"	t
+$(TARGET)	Makefile	/^$(TARGET): CFLAGS += -fPIC$/;"	t
+$(TARGET)	Makefile	/^$(TARGET): build $(OBJECTS)$/;"	t
+$(TESTS)	Makefile	/^$(TESTS): $(TARGET) $(TEST_SRC) $/;"	t
+0	compile_commands.json	/^      "\/usr\/bin\/gcc",$/;"	s	array:0.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/gcc",$/;"	s	array:1.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/gcc",$/;"	s	array:2.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/gcc",$/;"	s	array:3.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/gcc",$/;"	s	array:4.arguments
+0	compile_commands.json	/^  {$/;"	o
+1	compile_commands.json	/^      "-c",$/;"	s	array:3.arguments
+1	compile_commands.json	/^      "-c",$/;"	s	array:4.arguments
+1	compile_commands.json	/^      "-g",$/;"	s	array:0.arguments
+1	compile_commands.json	/^      "-g",$/;"	s	array:1.arguments
+1	compile_commands.json	/^      "-g",$/;"	s	array:2.arguments
+1	compile_commands.json	/^  {$/;"	o
+10	compile_commands.json	/^      "src\/lcthw\/DArray.c"$/;"	s	array:0.arguments
+10	compile_commands.json	/^      "src\/lcthw\/list.c"$/;"	s	array:2.arguments
+10	compile_commands.json	/^      "src\/lcthw\/list_algos.c"$/;"	s	array:1.arguments
+10	compile_commands.json	/^      "tests\/DArray_tests",$/;"	s	array:3.arguments
+10	compile_commands.json	/^      "tests\/list_tests",$/;"	s	array:4.arguments
+11	compile_commands.json	/^      "tests\/DArray_tests.c"$/;"	s	array:3.arguments
+11	compile_commands.json	/^      "tests\/list_tests.c"$/;"	s	array:4.arguments
+2	compile_commands.json	/^      "-O2",$/;"	s	array:0.arguments
+2	compile_commands.json	/^      "-O2",$/;"	s	array:1.arguments
+2	compile_commands.json	/^      "-O2",$/;"	s	array:2.arguments
+2	compile_commands.json	/^      "-g",$/;"	s	array:3.arguments
+2	compile_commands.json	/^      "-g",$/;"	s	array:4.arguments
+2	compile_commands.json	/^  {$/;"	o
+3	compile_commands.json	/^      "-O2",$/;"	s	array:3.arguments
+3	compile_commands.json	/^      "-O2",$/;"	s	array:4.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:1.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:2.arguments
+3	compile_commands.json	/^  {$/;"	o
+4	compile_commands.json	/^      "-Isrc",$/;"	s	array:0.arguments
+4	compile_commands.json	/^      "-Isrc",$/;"	s	array:1.arguments
+4	compile_commands.json	/^      "-Isrc",$/;"	s	array:2.arguments
+4	compile_commands.json	/^      "-Wextra",$/;"	s	array:3.arguments
+4	compile_commands.json	/^      "-Wextra",$/;"	s	array:4.arguments
+4	compile_commands.json	/^  {$/;"	o
+5	compile_commands.json	/^      "-DNDEBUG",$/;"	s	array:0.arguments
+5	compile_commands.json	/^      "-DNDEBUG",$/;"	s	array:1.arguments
+5	compile_commands.json	/^      "-DNDEBUG",$/;"	s	array:2.arguments
+5	compile_commands.json	/^      "-Isrc",$/;"	s	array:3.arguments
+5	compile_commands.json	/^      "-Isrc",$/;"	s	array:4.arguments
+6	compile_commands.json	/^      "-DNDEBUG",$/;"	s	array:3.arguments
+6	compile_commands.json	/^      "-DNDEBUG",$/;"	s	array:4.arguments
+6	compile_commands.json	/^      "-fPIC",$/;"	s	array:0.arguments
+6	compile_commands.json	/^      "-fPIC",$/;"	s	array:1.arguments
+6	compile_commands.json	/^      "-fPIC",$/;"	s	array:2.arguments
+7	compile_commands.json	/^      "-Isrc",$/;"	s	array:3.arguments
+7	compile_commands.json	/^      "-Isrc",$/;"	s	array:4.arguments
+7	compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+7	compile_commands.json	/^      "-c",$/;"	s	array:1.arguments
+7	compile_commands.json	/^      "-c",$/;"	s	array:2.arguments
+8	compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+8	compile_commands.json	/^      "-o",$/;"	s	array:1.arguments
+8	compile_commands.json	/^      "-o",$/;"	s	array:2.arguments
+8	compile_commands.json	/^      ".\/build\/liblcthw.a",$/;"	s	array:3.arguments
+8	compile_commands.json	/^      ".\/build\/liblcthw.a",$/;"	s	array:4.arguments
+9	compile_commands.json	/^      "-o",$/;"	s	array:3.arguments
+9	compile_commands.json	/^      "-o",$/;"	s	array:4.arguments
+9	compile_commands.json	/^      "src\/lcthw\/DArray.o",$/;"	s	array:0.arguments
+9	compile_commands.json	/^      "src\/lcthw\/list.o",$/;"	s	array:2.arguments
+9	compile_commands.json	/^      "src\/lcthw\/list_algos.o",$/;"	s	array:1.arguments
+BADFUNCS	Makefile	/^BADFUNCS='[^_.>a-zA-Z0-9](str(n?cpy|n?cat|xfrm|n?dup|str|pbrk|tok|_)|stpn?cpy|a?sn?printf|byte_)/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g -O2 -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)$/;"	m
+CFLAGS	Makefile	/^dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)$/;"	m
+DArray	src/lcthw/DArray.h	/^typedef struct DArray$/;"	s
+DArray	src/lcthw/DArray.h	/^}DArray;$/;"	t	typeref:struct:DArray
+DArray_clear	src/lcthw/DArray.c	/^void DArray_clear(DArray *array)$/;"	f	typeref:typename:void
+DArray_clear_destroy	src/lcthw/DArray.c	/^void DArray_clear_destroy(DArray *array)$/;"	f	typeref:typename:void
+DArray_contract	src/lcthw/DArray.c	/^int DArray_contract(DArray *array)$/;"	f	typeref:typename:int
+DArray_count	src/lcthw/DArray.h	/^#define DArray_count(/;"	d
+DArray_create	src/lcthw/DArray.c	/^DArray *DArray_create(size_t element_size, size_t initial_max)$/;"	f	typeref:typename:DArray *
+DArray_destroy	src/lcthw/DArray.c	/^void DArray_destroy(DArray *array)$/;"	f	typeref:typename:void
+DArray_end	src/lcthw/DArray.h	/^#define DArray_end(/;"	d
+DArray_expand	src/lcthw/DArray.c	/^int DArray_expand(DArray *array)$/;"	f	typeref:typename:int
+DArray_first	src/lcthw/DArray.h	/^#define DArray_first(/;"	d
+DArray_free	src/lcthw/DArray.h	/^#define DArray_free(/;"	d
+DArray_get	src/lcthw/DArray.h	/^static inline void *DArray_get(DArray *array, int i)$/;"	f	typeref:typename:void *
+DArray_last	src/lcthw/DArray.h	/^#define DArray_last(/;"	d
+DArray_max	src/lcthw/DArray.h	/^#define DArray_max(/;"	d
+DArray_new	src/lcthw/DArray.h	/^static inline void *DArray_new(DArray *array)$/;"	f	typeref:typename:void *
+DArray_pop	src/lcthw/DArray.c	/^void *DArray_pop(DArray *array)$/;"	f	typeref:typename:void *
+DArray_push	src/lcthw/DArray.c	/^int DArray_push(DArray *array, void *el)$/;"	f	typeref:typename:int
+DArray_remove	src/lcthw/DArray.h	/^static inline void *DArray_remove(DArray *array, int i)$/;"	f	typeref:typename:void *
+DArray_resize	src/lcthw/DArray.c	/^static inline int DArray_resize(DArray *array, size_t newsize)$/;"	f	typeref:typename:int	file:
+DArray_set	src/lcthw/DArray.h	/^static inline void DArray_set(DArray *array, int i, void *el)$/;"	f	typeref:typename:void
+DEFAULT_EXPAND_RATE	src/lcthw/DArray.h	/^#define DEFAULT_EXPAND_RATE /;"	d
+LCTHW_DIR	Makefile	/^LCTHW_DIR=.\/src\/lcthw$/;"	m
+LIBS	Makefile	/^LIBS=-ldl $(OPTLIBS)$/;"	m
+LIB_DIR	Makefile	/^LIB_DIR=.\/build$/;"	m
+LIST_FOREACH	src/lcthw/list.h	/^#define LIST_FOREACH(/;"	d
+List	src/lcthw/list.h	/^typedef struct List$/;"	s
+List	src/lcthw/list.h	/^} List;$/;"	t	typeref:struct:List
+ListNode	src/lcthw/list.h	/^typedef struct ListNode$/;"	s
+ListNode	src/lcthw/list.h	/^} ListNode;$/;"	t	typeref:struct:ListNode
+ListNode_swap	src/lcthw/list_algos.c	/^void ListNode_swap(ListNode *a, ListNode *b)$/;"	f	typeref:typename:void
+List_bubble_sort	src/lcthw/list_algos.c	/^int List_bubble_sort(List *list, List_compare cmp)$/;"	f	typeref:typename:int
+List_clear	src/lcthw/list.c	/^void List_clear(List *list)$/;"	f	typeref:typename:void
+List_clear_destroy	src/lcthw/list.c	/^void List_clear_destroy(List *list)$/;"	f	typeref:typename:void
+List_compare	src/lcthw/list_algos.h	/^typedef int (*List_compare)(const void *str1, const void *str2);$/;"	t	typeref:typename:int (*)(const void * str1,const void * str2)
+List_count	src/lcthw/list.h	/^#define List_count(/;"	d
+List_create	src/lcthw/list.c	/^List *List_create()$/;"	f	typeref:typename:List *
+List_destroy	src/lcthw/list.c	/^void List_destroy(List *list)$/;"	f	typeref:typename:void
+List_first	src/lcthw/list.h	/^#define List_first(/;"	d
+List_last	src/lcthw/list.h	/^#define List_last(/;"	d
+List_merge	src/lcthw/list_algos.c	/^List *List_merge(List *left, List *right, List_compare cmp)$/;"	f	typeref:typename:List *
+List_merge_sort	src/lcthw/list_algos.c	/^List *List_merge_sort(List *list, List_compare cmp)$/;"	f	typeref:typename:List *
+List_pop	src/lcthw/list.c	/^void *List_pop(List *list)$/;"	f	typeref:typename:void *
+List_push	src/lcthw/list.c	/^void List_push(List *list, void *value)$/;"	f	typeref:typename:void
+List_remove	src/lcthw/list.c	/^void *List_remove(List *list, ListNode *node)$/;"	f	typeref:typename:void *
+List_shift	src/lcthw/list.c	/^void *List_shift(List *list)$/;"	f	typeref:typename:void *
+List_unshift	src/lcthw/list.c	/^void List_unshift(List *list, void *value)$/;"	f	typeref:typename:void
+OBJECTS	Makefile	/^OBJECTS=$(patsubst %.c,%.o,$(SOURCES))$/;"	m
+OBJ_DIR	Makefile	/^OBJ_DIR=.\/obj$/;"	m
+PREFIX	Makefile	/^PREFIX?=\/usr\/local$/;"	m
+RUN_TESTS	tests/minunit.h	/^#define RUN_TESTS(/;"	d
+SOURCES	Makefile	/^SOURCES=$(wildcard $(SRC_DIR)\/**\/*.c $(SRC_DIR)\/*.c)$/;"	m
+SO_TARGET	Makefile	/^SO_TARGET=$(patsubst %.a,%.so,$(TARGET))$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR=.\/src$/;"	m
+TARGET	Makefile	/^TARGET=$(LIB_DIR)\/liblcthw.a$/;"	m
+TESTS	Makefile	/^TESTS=$(patsubst %.c,%,$(TEST_SRC))$/;"	m
+TEST_DIR	Makefile	/^TEST_DIR=.\/tests$/;"	m
+TEST_SRC	Makefile	/^TEST_SRC=$(wildcard $(TEST_DIR)\/*_tests.c)$/;"	m
+_DArray_H	src/lcthw/DArray.h	/^#define _DArray_H$/;"	d
+__dbg_h__	src/lcthw/dbg.h	/^#define __dbg_h__$/;"	d
+_lcthw_List_algos_h	src/lcthw/list_algos.h	/^#define _lcthw_List_algos_h$/;"	d
+_lcthw_List_h	src/lcthw/list.h	/^#define _lcthw_List_h$/;"	d
+_minunit_h	tests/minunit.h	/^#define _minunit_h$/;"	d
+all	Makefile	/^all: $(TARGET) $(SO_TARGET) tests objs $/;"	t
+all_tests	tests/DArray_tests.c	/^char *all_tests()$/;"	f	typeref:typename:char *
+all_tests	tests/list_tests.c	/^char *all_tests() $/;"	f	typeref:typename:char *
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:0
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:1
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:2
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:3
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:4
+array	tests/DArray_tests.c	/^static DArray *array = NULL;$/;"	v	typeref:typename:DArray *	file:
+build	Makefile	/^build:$/;"	t
+check	Makefile	/^check:$/;"	t
+check	src/lcthw/dbg.h	/^#define check(/;"	d
+check_debug	src/lcthw/dbg.h	/^#define check_debug(/;"	d
+check_mem	src/lcthw/dbg.h	/^#define check_mem(/;"	d
+clean	Makefile	/^clean:$/;"	t
+clean_errno	src/lcthw/dbg.h	/^#define clean_errno(/;"	d
+contents	src/lcthw/DArray.h	/^    void **contents;		\/\/An array of pointers to type void*, which is used to store the actual /;"	m	struct:DArray	typeref:typename:void **
+count	src/lcthw/list.h	/^    int count;$/;"	m	struct:List	typeref:typename:int
+debug	src/lcthw/dbg.h	/^#define debug(/;"	d
+dev	Makefile	/^dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)$/;"	t
+dev	Makefile	/^dev: all$/;"	t
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw",$/;"	s	object:0
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw",$/;"	s	object:1
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw",$/;"	s	object:2
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw",$/;"	s	object:3
+directory	compile_commands.json	/^    "directory": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw",$/;"	s	object:4
+element_size	src/lcthw/DArray.h	/^    size_t element_size;	\/\/the size of each element in the array$/;"	m	struct:DArray	typeref:typename:size_t
+end	src/lcthw/DArray.h	/^    int end;				\/\/the current size of array, the number of elements in the arrays$/;"	m	struct:DArray	typeref:typename:int
+expand_rate	src/lcthw/DArray.h	/^    size_t expand_rate;		\/\/the expanding rate of array as it expands$/;"	m	struct:DArray	typeref:typename:size_t
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/src\/lcthw\/DArray.c",$/;"	s	object:0
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/src\/lcthw\/list.c",$/;"	s	object:2
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/src\/lcthw\/list_algos.c",$/;"	s	object:1
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/tests\/DArray_tests.c",$/;"	s	object:3
+file	compile_commands.json	/^    "file": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/tests\/list_tests.c",$/;"	s	object:4
+first	src/lcthw/list.h	/^    ListNode *first;$/;"	m	struct:List	typeref:typename:ListNode *
+install	Makefile	/^install: all$/;"	t
+last	src/lcthw/list.h	/^    ListNode *last;$/;"	m	struct:List	typeref:typename:ListNode *
+list	tests/list_tests.c	/^static List *list = NULL;$/;"	v	typeref:typename:List *	file:
+log_err	src/lcthw/dbg.h	/^#define log_err(/;"	d
+log_info	src/lcthw/dbg.h	/^#define log_info(/;"	d
+log_warn	src/lcthw/dbg.h	/^#define log_warn(/;"	d
+max	src/lcthw/DArray.h	/^    int max;				\/\/the maximum capacity of the array$/;"	m	struct:DArray	typeref:typename:int
+mu_assert	tests/minunit.h	/^#define mu_assert(/;"	d
+mu_run_test	tests/minunit.h	/^#define mu_run_test(/;"	d
+mu_suite_start	tests/minunit.h	/^#define mu_suite_start(/;"	d
+next	src/lcthw/list.h	/^    struct ListNode *next;$/;"	m	struct:ListNode	typeref:struct:ListNode *
+objs	Makefile	/^objs:$(OBJECTS)$/;"	t
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/src\/lcthw\/DArray.o"$/;"	s	object:0
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/src\/lcthw\/list.o"$/;"	s	object:2
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/src\/lcthw\/list_algos.o"$/;"	s	object:1
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/tests\/DArray_tests"$/;"	s	object:3
+output	compile_commands.json	/^    "output": "\/home\/jai\/Learn_C_The_Hard_Way\/ex34\/liblcthw\/tests\/list_tests"$/;"	s	object:4
+prev	src/lcthw/list.h	/^    struct ListNode *prev;$/;"	m	struct:ListNode	typeref:struct:ListNode *
+run_test	Makefile	/^run_test:$/;"	t
+sentinel	src/lcthw/dbg.h	/^#define sentinel(/;"	d
+test1	tests/list_tests.c	/^char *test1 = "test1 data";$/;"	v	typeref:typename:char *
+test2	tests/list_tests.c	/^char *test2 = "test2 data";$/;"	v	typeref:typename:char *
+test3	tests/list_tests.c	/^char *test3 = "test3 data";$/;"	v	typeref:typename:char *
+test_create	tests/DArray_tests.c	/^char *test_create()$/;"	f	typeref:typename:char *
+test_create	tests/list_tests.c	/^char *test_create()$/;"	f	typeref:typename:char *
+test_destroy	tests/DArray_tests.c	/^char *test_destroy()$/;"	f	typeref:typename:char *
+test_destroy	tests/list_tests.c	/^char *test_destroy()$/;"	f	typeref:typename:char *
+test_expand_contract	tests/DArray_tests.c	/^char *test_expand_contract()$/;"	f	typeref:typename:char *
+test_get	tests/DArray_tests.c	/^char *test_get()$/;"	f	typeref:typename:char *
+test_new	tests/DArray_tests.c	/^char *test_new()$/;"	f	typeref:typename:char *
+test_push_pop	tests/DArray_tests.c	/^char *test_push_pop()$/;"	f	typeref:typename:char *
+test_push_pop	tests/list_tests.c	/^char *test_push_pop()$/;"	f	typeref:typename:char *
+test_remove	tests/DArray_tests.c	/^char *test_remove()$/;"	f	typeref:typename:char *
+test_remove	tests/list_tests.c	/^char *test_remove()$/;"	f	typeref:typename:char *
+test_set	tests/DArray_tests.c	/^char *test_set()$/;"	f	typeref:typename:char *
+test_shift	tests/list_tests.c	/^char *test_shift()$/;"	f	typeref:typename:char *
+test_unshift	tests/list_tests.c	/^char *test_unshift()$/;"	f	typeref:typename:char *
+tests	Makefile	/^tests: $(TESTS)$/;"	t
+tests	Makefile	/^tests: CFLAGS += -Isrc$/;"	t
+tests_run	tests/minunit.h	/^int tests_run;$/;"	v	typeref:typename:int
+val1	tests/DArray_tests.c	/^static int *val1 = NULL;$/;"	v	typeref:typename:int *	file:
+val2	tests/DArray_tests.c	/^static int *val2 = NULL;$/;"	v	typeref:typename:int *	file:
+valgrind	Makefile	/^valgrind:$/;"	t
+value	src/lcthw/list.h	/^    void *value;$/;"	m	struct:ListNode	typeref:typename:void *

@@ -106,8 +106,7 @@ int DB_find(const char *url)
 	if (binstr(data, 0, line) == BSTR_ERR)
 	{
 		res = 0;
-	}
-	else
+	} else 
 	{
 		res = 1;
 	}
@@ -125,23 +124,28 @@ error: // fallthrough
 }
 
 /**
- * Initialize the database by creating the directory and file if they do not exist.
+ * Initialize the database by creating the directory 
+ * and file if they do not exist.
  */
 int DB_init()
 {
-	apr_pool_t *p = NULL;				   // Declare an APR memory pool pointer
-	apr_pool_initialize();				   // Initialize the APR memory pool system
+	apr_pool_t *p = NULL;			 // Declare an APR memory pool pointer
+	apr_pool_initialize();			 // Initialize the APR memory pool system
 	apr_pool_create(&p, NULL);
-										
-	if (access(DB_DIR, W_OK | X_OK) == -1)					// Check if the directory exists and has write and execute permission
+
+
+	// Check if the directory exists and has write and execute permission
+	if (access(DB_DIR, W_OK | X_OK) == -1)
 	{
-		apr_status_t rc = apr_dir_make_recursive(DB_DIR,	//Create the directory recursively using APR
+		// Create the directory recursively using APR
+		apr_status_t rc = apr_dir_make_recursive(DB_DIR,
 				APR_UREAD | APR_UWRITE | APR_UEXECUTE |
 				APR_GREAD | APR_GWRITE | APR_GEXECUTE, p);
 		check(rc == APR_SUCCESS, "Failed to make database directory: %s", DB_DIR);
 	}
 
-	if (access(DB_FILE, W_OK) == -1)						 // Check if the file exists and has write permissions
+	// Check if the file exists and has write permissions
+	if (access(DB_FILE, W_OK) == -1) 
 	{
 		FILE *db = DB_open(DB_FILE, "W");				
 		check(db, "Cannot open database: %s", DB_FILE);

@@ -53,7 +53,8 @@ int main(int argc, const char *argv[])
 
 	while(apr_getopt(opt, "I:Lc:m:i:d;SF:B:", &ch, &optarg) == APR_SUCCESS)
 	{
-		switch (ch) {
+		switch (ch)
+		{
 			case 'I':
 				request = COMMAND_INSTALL;
 				url = optarg;
@@ -93,7 +94,8 @@ int main(int argc, const char *argv[])
 		}
 	}
 
-	switch (request) {
+	switch (request)
+	{
 		case COMMAND_INSTALL:
 			check(url, "You must at least give a URL.");
 			Command_install(p, url, config_opts, make_opts, install_opts);
