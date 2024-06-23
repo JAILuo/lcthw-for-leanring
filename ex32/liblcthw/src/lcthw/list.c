@@ -11,9 +11,8 @@ void List_destroy(List *list)
 {
     LIST_FOREACH(list, first, next, cur) 
     {
-        if(cur->prev)
-	{
-	    free(cur->prev);
+        if(cur->prev) {
+	        free(cur->prev);
         }
     }
 
@@ -26,7 +25,7 @@ void List_clear(List *list)
 {
     LIST_FOREACH(list, first, next, cur)
     {   
-	free(cur->value);
+        free(cur->value);
     }
 }
 
@@ -113,9 +112,9 @@ void *List_remove(List *list, ListNode *node)
 {
     void *result = NULL;
 
-    assert(list && "List pointer is NULL");  // 断言：确保List *list不为NULL
-    assert(list->count > 0 && "List count is less than or equal to 0");  // 断言：确保count大于0
-    assert(node && "Node pointer is NULL");  // 断言：确保node不为NULL
+    assert(list && "List pointer is NULL");  // 确保List *list不为NULL
+    assert(list->count > 0 && "List count is less than or equal to 0");  // 确保count大于0
+    assert(node && "Node pointer is NULL");  // 确保node不为NULL
 
     check(list->first && list->last, "List is empty.");
     check(node, "node can't be NULL");

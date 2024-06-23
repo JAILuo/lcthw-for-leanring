@@ -4,8 +4,7 @@
 #include <lcthw/bstrlib.h>
 
 // 定义环形缓冲区的结构体
-typedef struct
-{
+typedef struct {
     char *buffer;  // 缓冲区指针
     int length;    // 缓冲区长度
     int start;     // 缓冲区中的起始位置

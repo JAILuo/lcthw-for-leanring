@@ -1,0 +1,148 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/bstrlib.o",
+      "src/lcthw/bstrlib.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/bstrlib.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/bstrlib.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/DArray_algos.o",
+      "src/lcthw/DArray_algos.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/DArray_algos.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/DArray_algos.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/DArray.o",
+      "src/lcthw/DArray.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/DArray.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/DArray.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/Hashmap.o",
+      "src/lcthw/Hashmap.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/Hashmap.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/Hashmap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/list_algos.o",
+      "src/lcthw/list_algos.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/list_algos.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/list_algos.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/list.o",
+      "src/lcthw/list.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/list.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/src/lcthw/list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-Isrc",
+      "build/liblcthw.a",
+      "-o",
+      "tests/queue_tests",
+      "tests/queue_tests.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/tests/queue_tests.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/tests/queue_tests"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-g",
+      "-O3",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-Isrc",
+      "build/liblcthw.a",
+      "-o",
+      "tests/stack_tests",
+      "tests/stack_tests.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/tests/stack_tests.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex42/liblcthw/tests/stack_tests"
+  }
+]

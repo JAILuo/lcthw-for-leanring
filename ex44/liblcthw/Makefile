@@ -1,35 +1,53 @@
+# -------- 文件目录 --------
+SRC_DIR=./src
+LIB_DIR=./build
+TEST_DIR=./tests
+LCTHW_DIR=./src/lcthw
+OBJ_DIR=./obj
+
+# -------- 编译选项 --------
 CFLAGS=-g -O2 -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+CC=gcc
 LIBS=-ldl $(OPTLIBS)
 PREFIX?=/usr/local
 
-SOURCES=$(wildcard src/**/*.c src/*.c)
+# -------- 变量 --------
+SOURCES=$(wildcard $(SRC_DIR)/**/*.c $(SRC_DIR)/*.c)
+# 修改OBJECTS变量，将生成的.o文件放到src/lcthw/build目录中
 OBJECTS=$(patsubst %.c,%.o,$(SOURCES))
 
-TEST_SRC=$(wildcard tests/*_tests.c)
+TEST_SRC=$(wildcard $(TEST_DIR)/*_tests.c)
 TESTS=$(patsubst %.c,%,$(TEST_SRC))
-# 这次的问题应该是头文件的问题，要加上特定的目录？
-TARGET=build/liblcthw.a
+
+TARGET=$(LIB_DIR)/liblcthw.a
 SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
 
+# -------- 脚本执行 --------
 # The Target Build
-all: $(TARGET) $(SO_TARGET) tests 
+all: $(TARGET) $(SO_TARGET) tests objs 
 
 dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)
 dev: all
 
+# Static Lib
 $(TARGET): CFLAGS += -fPIC
 $(TARGET): build $(OBJECTS)
 	ar rcs $@ $(OBJECTS)
 	ranlib $@
-#	$(CC) $(CFLAGS) $(TEST_SRC) $(TARGET) -o tests/list_algos_tests
 
-
+# Dynamic Lib
 $(SO_TARGET): $(TARGET) $(OBJECTS)
 	$(CC) -shared -o $@ $(OBJECTS)
+
+# obj files
+# 之前使用了@<只指定了第一个依赖项，也就是DArray.o，只有这个文件移到obj里去
+objs:$(OBJECTS)
+	@mv $^ $(OBJ_DIR)
 
 build:
 	@mkdir -p build
 	@mkdir -p bin
+	@mkdir -p obj
 
 # The Unit Tests
 .PHONY: tests
@@ -37,19 +55,18 @@ tests: CFLAGS += -Isrc
 tests: $(TESTS)
 $(TESTS): $(TARGET) $(TEST_SRC) 
 	$(CC) $(CFLAGS) $@.c  -o $@  $(TARGET)
-#	sh ./tests/runtests.sh
 
-#这样子编译顺序就没有问题了 详细见笔记
 
-sh_TEST:
+run_test:
 	sh ./tests/runtests.sh
 
+# valgrind
 valgrind:
 	VALGRIND="valgrind --log-file=/tmp/valgrind-%p.log" $(MAKE)
 
 # The Cleaner
 clean:
-	rm -rf build $(OBJECTS) $(TESTS)
+	rm -rf build $(OBJECTS) $(TESTS) $(OBJ_DIR)
 	rm -f tests/tests.log
 	find . -name "*.gc*" -exec rm {} \;
 	rm -rf `find . -name "*.dSYM" -print`

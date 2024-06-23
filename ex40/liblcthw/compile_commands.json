@@ -1,0 +1,39 @@
+[
+  {
+    "arguments": [
+      "/usr/lib/ccache/gcc",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-Isrc",
+      "-DNDEBUG",
+      "-fPIC",
+      "-c",
+      "-o",
+      "src/lcthw/bstree.o",
+      "src/lcthw/bstree.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex40/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex40/liblcthw/src/lcthw/bstree.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex40/liblcthw/src/lcthw/bstree.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-O2",
+      "-Wextra",
+      "-fPIC",
+      "-Isrc",
+      "-DNDEBUG",
+      "-c",
+      "-fdiagnostics-color",
+      "-o",
+      "src/lcthw/bstree.o",
+      "src/lcthw/bstree.c"
+    ],
+    "directory": "/home/jai/Learn_C_The_Hard_Way/ex40/liblcthw",
+    "file": "/home/jai/Learn_C_The_Hard_Way/ex40/liblcthw/src/lcthw/bstree.c",
+    "output": "/home/jai/Learn_C_The_Hard_Way/ex40/liblcthw/src/lcthw/bstree.o"
+  }
+]

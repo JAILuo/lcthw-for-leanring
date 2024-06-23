@@ -37,3 +37,42 @@ DEBUG tests/list_tests.c:105:all_tests:
 ----- test_shift
 DEBUG tests/list_tests.c:106:all_tests: 
 ----- test_destroy
+DEBUG tests/list_tests.c:111:main: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:101:all_tests: 
+----- test_create
+DEBUG tests/list_tests.c:102:all_tests: 
+----- test_push_pop
+DEBUG tests/list_tests.c:103:all_tests: 
+----- test_unshift
+DEBUG tests/list_tests.c:104:all_tests: 
+----- test_remove
+DEBUG tests/list_tests.c:105:all_tests: 
+----- test_shift
+DEBUG tests/list_tests.c:106:all_tests: 
+----- test_destroy
+DEBUG tests/list_tests.c:111:main: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:101:all_tests: 
+----- test_create
+DEBUG tests/list_tests.c:102:all_tests: 
+----- test_push_pop
+DEBUG tests/list_tests.c:103:all_tests: 
+----- test_unshift
+DEBUG tests/list_tests.c:104:all_tests: 
+----- test_remove
+DEBUG tests/list_tests.c:105:all_tests: 
+----- test_shift
+DEBUG tests/list_tests.c:106:all_tests: 
+----- test_destroy
+DEBUG tests/list_tests.c:111:main: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:101:all_tests: 
+----- test_create
+DEBUG tests/list_tests.c:102:all_tests: 
+----- test_push_pop
+DEBUG tests/list_tests.c:103:all_tests: 
+----- test_unshift
+DEBUG tests/list_tests.c:104:all_tests: 
+----- test_remove
+DEBUG tests/list_tests.c:105:all_tests: 
+----- test_shift
+DEBUG tests/list_tests.c:106:all_tests: 
+----- test_destroy

@@ -11,7 +11,6 @@
 #include "bstrlib.h"
 #include "db.h"
 
-
 /**
  * @brief Processes dependencies for a given path.
  * 

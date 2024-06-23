@@ -122,7 +122,7 @@ error: // fallthrough
 	}
 	return res;
 }
-
+z
 /**
  * Initialize the database by creating the directory 
  * and file if they do not exist.

@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/61cc66cfc/
+RUN_TESTS	minunit.h	/^#define RUN_TESTS(/;"	d
+_minunit_h	minunit.h	/^#define _minunit_h$/;"	d
+all_tests	bstr_tests.c	/^char *all_tests()$/;"	f	typeref:typename:char *
+expect1	bstr_tests.c	/^struct tagbstring expect1 = bsStatic("THE VALUE1.");$/;"	v	typeref:struct:tagbstring
+expect2	bstr_tests.c	/^struct tagbstring expect2 = bsStatic("THE VALUE2.");$/;"	v	typeref:struct:tagbstring
+expect3	bstr_tests.c	/^struct tagbstring expect3 = bsStatic("THE VALUE3.");$/;"	v	typeref:struct:tagbstring
+map	bstr_tests.c	/^Hashmap *map = NULL;$/;"	v	typeref:typename:Hashmap *
+mu_assert	minunit.h	/^#define mu_assert(/;"	d
+mu_run_test	minunit.h	/^#define mu_run_test(/;"	d
+mu_suite_start	minunit.h	/^#define mu_suite_start(/;"	d
+test1	bstr_tests.c	/^struct tagbstring test1 = bsStatic("test data1.");$/;"	v	typeref:struct:tagbstring
+test2	bstr_tests.c	/^struct tagbstring test2 = bsStatic("test data2.");$/;"	v	typeref:struct:tagbstring
+test3	bstr_tests.c	/^struct tagbstring test3 = bsStatic("test data3.");$/;"	v	typeref:struct:tagbstring
+test_create	bstr_tests.c	/^char *test_create()$/;"	f	typeref:typename:char *
+test_delete	bstr_tests.c	/^char *test_delete()$/;"	f	typeref:typename:char *
+test_destroy	bstr_tests.c	/^char *test_destroy()$/;"	f	typeref:typename:char *
+test_get_set	bstr_tests.c	/^char *test_get_set()$/;"	f	typeref:typename:char *
+test_traverse	bstr_tests.c	/^char *test_traverse()$/;"	f	typeref:typename:char *
+tests_run	minunit.h	/^int tests_run;$/;"	v	typeref:typename:int
+traverse_called	bstr_tests.c	/^static int traverse_called = 0;$/;"	v	typeref:typename:int	file:
+traverse_fail_cb	bstr_tests.c	/^static int traverse_fail_cb(HashmapNode *node)$/;"	f	typeref:typename:int	file:
+traverse_good_cb	bstr_tests.c	/^static int traverse_good_cb(HashmapNode *node)$/;"	f	typeref:typename:int	file:
